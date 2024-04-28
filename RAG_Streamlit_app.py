@@ -29,7 +29,7 @@ st.title('🦜🔗 Ask the Doc App')
 # File upload
 uploaded_file = st.file_uploader('Upload an article', type='txt')
 # Query text
-query_text = st.text_input('Enter your question:')
+query_text = st.text_input('Enter your question:', disabled=not uploaded_file)
 
 # Form input and query
 result = []
